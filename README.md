@@ -1,2 +1,1 @@
-# Web_Programming
-Web_Programming_Projekt
+# Web_Programming_Projekt WI22A2 Jeri, Niklas 
