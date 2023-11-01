@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5b85a5b4e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,7 +14,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Clothes.com</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,27 +50,127 @@
                 </ul>
             </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="search">
+              <input type="text" class="search-input" placeholder="search..." name="">
+              <a href="#" class="search-icon">
+                  <i class="fa fa-search"></i>
+              </a>
+          </div>
+          
+            
           </div>
         </div>
-    </nav>
+</nav>
 
-    <header class="bg-dark py-5">
+<header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Shop in style</h1>
-                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                <p class="lead fw-normal text-white-50 mb-0">Treat yourself with new clothes!</p>
             </div>
         </div>
-    </header>
+</header>
 
 
-    <main class="content">
-        <section class="product-list">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+<main class="">
+<section class="filter">
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col filterintro">
+          <p><i class="fa-solid fa-filter p-1"></i><strong>Filter Options:</strong> </p>
+        </div>
+        <div class="col">
+         
+            <ul class="navbar-nav mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort By
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><input type="checkbox">Latest Arrivals</li>
+                        <li><input type="checkbox">Lowest Price</li>
+                        <li><input type="checkbox">Highest Price</li>
+                        <li><input type="checkbox">Sale</li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="navbar-nav mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Size
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><input type="checkbox">Extra Small</li>
+                        <li><input type="checkbox">Small</li>
+                        <li><input type="checkbox">Medium</li>
+                        <li><input type="checkbox">Large</li>
+                        <li><input type="checkbox">Extra Large</li>
+                        <li><input type="checkbox">Extra Extra Large</li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+          <ul class="navbar-nav mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Brand
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><input type="checkbox">Jack & Jones</li>
+                      <li><input type="checkbox">Tommy Hilfiger</li>
+                      <li><input type="checkbox">Wrangler</li>
+                      <li><input type="checkbox">Napapijri</li>
+                      <li></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <div class="col">
+        <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Color
+                </a>
+                <ul class="dropdown-menu">
+                    <li><input type="checkbox">Black</li>
+                    <li><input type="checkbox">Blue</li>
+                    <li><input type="checkbox">White</li>
+                    <li><input type="checkbox">Yellow</li>
+                    <li><input type="checkbox">Green</li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col">
+      <ul class="navbar-nav mb-lg-0">
+          <li class="">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Price
+              </a>
+              <ul class="dropdown-menu">
+                <div class="slidecontainer p-1">
+                  <input type="range" min="1" max="399.99"value="100" class="slider" id="myRange"> 
+                  <p>Price: <span id="demo"></span><span>$</span></p>
+                </div>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="product-list p-5">
+            <div class="p-5 row row-cols-1 row-cols-sm-2 row-cols-md-3">
                   <div class="col">
                       <div class="product">
                           <img draggable="false"  alt="Fleecepullover" src="https://img01.ztat.net/article/spp-media-p1/b342c9e46ca5495dab26ba4ec64e94e6/c3841ff6758c4ba992b2b82322c85aa9.jpg?imwidth=300&amp;filter=packshot"  
@@ -113,7 +215,7 @@
                         <button class="add-to-cart">ADD TO CART</button>
                     </div>
                   </div>
-                  <div class="col show-border">
+                  <div class="col">
                     <div class="product">
                         <img draggable="false" alt="Half-Zip" src="https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=500 605w" 
                         sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
@@ -169,14 +271,48 @@
                         <button class="add-to-cart">ADD TO CART</button>
                     </div>
                   </div>
+                  <div class="col">
+                    <div class="product">
+                      <img draggable="false" alt="Sweatpants" src="https://img01.ztat.net/article/spp-media-p1/7059f48fd1a048e0acff668bface8814/f69f77b1d2fc4319813532de7341f49a.jpg?imwidth=300" sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <h4>Sweatpants</h4>
+                        <h5>Nike</h5>
+                        <p>Grey Sweatpants</p>
+                        <span class="price">$39.99</span>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/e3c6406a599143bc970d207b8f07fdd2/c067c35abdd94c05962de1b859e20bda.jpg?imwidth=300" 
+                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <h4>Trainingsjacket</h4>
+                        <h5>Bershka</h5>
+                        <p>Retro Trainingsjacket Bershka</p>
+                        <span class="price">$29.99</span>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <img draggable="false"  alt="Socks" src="https://img01.ztat.net/article/spp-media-p1/8e30bbe86aa84abcaaccb24503cecdb2/01752ed9e77b408ca1a193dfbc6aa882.jpg?imwidth=300&amp;filter=packshot" 
+                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <h4>Modern Overshirt</h4>
+                        <h5>Tommy Jeans</h5>
+                        <p>Winterjacke</p>
+                        <span class="price">$159.99</span>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                  </div>
               
       </div>
-    </section>
-  </main>
+  </section>
+</main>
+
+
 
 
     
-  <footer
+<footer
         class="text-center text-lg-start text-white"
         style="background-color: #1c2331; position: relative; bottom: 0; width: 100%;">
 
@@ -283,6 +419,16 @@
             <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
 
-  </footer>
+</footer>
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  </script>
 </body>
 </html>

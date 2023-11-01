@@ -19,3 +19,157 @@ body{
 .show-border{
     border: 1px solid green;
 }
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+  
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+  
+/* Stil für das Dropdown-Menü */
+.nav-item {
+    position: relative;
+  }
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Hintergrundfarbe für das Dropdown */
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex-direction: row; /* Elemente in einer Zeile anordnen */
+}
+  
+.dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+  
+  /* Anzeigen des Dropdown-Menüs beim Klicken auf den Link */
+.nav-item:focus-within .dropdown-menu {
+    display: block;
+}
+  
+  /* Stil für den Dropdown-Link */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+}
+  /* Stil für die Checkboxen */
+.dropdown-menu input[type="checkbox"] {
+    margin-right: 8px;
+}
+.hidden {
+    display: none;
+}
+.iconButton {
+  
+    border-radius: 10px;
+    background: transparent;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Zeige einen Zeiger-Cursor beim Hover an */
+}
+.filter{
+    background: #f0f0f0;
+}
+
+
+.filterintro{
+  align-items: center;
+  padding: 8px 12px;;
+}
+.search{
+    margin-bottom: auto;
+    height: auto;
+    background-color: #fff;
+
+}
+
+.search-input{
+
+    color: white;
+    border:0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top:5px;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+
+}
+
+.search .search-input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color: #536bf6;
+    font-size: 21px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+.search:hover>.search-icon{
+    background:#1A237E;
+    color:#fff;
+}
+.search-icon{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #536bf6;
+
+}
+a:link{
+    text-decoration: none;
+}
+
