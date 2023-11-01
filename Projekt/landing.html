@@ -104,7 +104,7 @@
         <div class="col-md-4">
             <div class="md-form mb-0">
                 <input type="text" id="email" name="email" class="form-control">
-                <label for="email">Your email</label>
+                <label for "email">Your email</label>
             </div>
         </div>
     </div>
@@ -126,10 +126,28 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            <a class="btn btn-primary" onclick="createJSON();">Send</a>
         </div>
     </div>
 </section>
+
+<script>
+    function createJSON() {
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+
+        // Convert form data to JSON
+        const jsonData = JSON.stringify(formData);
+
+        // Display the JSON object in the console
+        console.log(jsonData);
+    }
+</script>
+
 
 
 <!-- Footer Section -->
@@ -209,5 +227,9 @@
             </div>
         </div>
     </section>
-    
 
+<!-- Bootstrap and jQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
