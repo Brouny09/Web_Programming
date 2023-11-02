@@ -105,11 +105,9 @@ body{
 }
 .iconButton {
   
-    border-radius: 10px;
+    border: none;
     background: transparent;
     font-size: 24px;
-    margin: 0;
-    padding: 0 10px;
     display: flex;
     align-items: center;
     cursor: pointer; /* Zeige einen Zeiger-Cursor beim Hover an */
@@ -131,7 +129,6 @@ body{
 }
 
 .search-input{
-
     color: white;
     border:0;
     outline: 0;
@@ -154,10 +151,6 @@ body{
     transition: width 0.4s linear;
 }
 
-.search:hover>.search-icon{
-    background:#1A237E;
-    color:#fff;
-}
 .search-icon{
     height: 50px;
     width: 50px;
@@ -165,8 +158,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: #536bf6;
+    color: rgb(0, 0, 0);
+    background-color: trans
 
 }
 a:link{
@@ -174,14 +167,7 @@ a:link{
 }
 
 
-.product{
-    margin-bottom: 200px;
-    padding: 10px;
-    display: inline-block;
-    border: 1px solid black;
-    transition: box-shadow 0.3s;
-    border-radius: 10px;
-}
+
 
 .product:hover {
     box-shadow: 100px 0 100px rgba(0, 0, 0, 0.3); /* Hinzufügen eines Schattens beim Hovern */
@@ -194,11 +180,12 @@ a:link{
 }
 
 .product {
-    border: 1px solid #ccc;
+    margin-bottom: 200px;
     padding: 10px;
-    text-align: center;
-    background-color: #fff;
+    display: inline-block;
+    border: 2px solid rgb(197, 194, 194); /* Erhöhte Border-Breite auf 3px */
     transition: box-shadow 0.3s;
+    border-radius: 10px;
 }
 
 .product:hover {
@@ -248,8 +235,309 @@ p {
     background-color: #536bf6;
 }
 
-body{
-    background-color: #ecedee
+.colors ul{list-style: none;display: flex;padding-left: 0px}
+.colors ul li{height: 20px;width: 20px;display: flex;border-radius: 50%;margin-right: 10px;cursor: pointer}
+
+
+#marker-black {
+    background-color: #000000;
+}
+#marker-blue{
+    background-color: rgb(15, 15, 137);
 }
 
-.card{border: none;overflow: hidden}.thumbnail_images ul{list-style: none;justify-content: center;display: flex;align-items: center;margin-top:10px}.thumbnail_images ul li{margin: 5px;padding: 10px;border: 2px solid #eee;cursor: pointer;transition: all 0.5s}.thumbnail_images ul li:hover{border: 2px solid #000}.main_image{display: flex;justify-content: center;align-items: center;border-bottom: 1px solid #eee;height: 400px;width: 100%;overflow: hidden}.heart{height: 29px;width: 29px;background-color: #eaeaea;border-radius: 50%;display: flex;justify-content: center;align-items: center}.content p{font-size: 12px}.ratings span{font-size: 14px;margin-left: 12px}.colors{margin-top: 5px}.colors ul{list-style: none;display: flex;padding-left: 0px}.colors ul li{height: 20px;width: 20px;display: flex;border-radius: 50%;margin-right: 10px;cursor: pointer}.colors ul li:nth-child(1){background-color: #6c704d}.colors ul li:nth-child(2){background-color: #96918b}.colors ul li:nth-child(3){background-color: #68778e}.colors ul li:nth-child(4){background-color: #263f55}.colors ul li:nth-child(5){background-color: black}.right-side{position: relative}.search-option{position: absolute;background-color: #000;overflow: hidden;align-items: center;color: #fff;width: 200px;height: 200px;border-radius: 49% 51% 50% 50% / 68% 69% 31% 32%;left: 30%;bottom: -250px;transition: all 0.5s;cursor: pointer}.search-option .first-search{position: absolute;top: 20px;left: 90px;font-size: 20px;opacity: 1000}.search-option .inputs{opacity: 0;transition: all 0.5s ease;transition-delay: 0.5s;position: relative}.search-option .inputs input{position: absolute;top: 200px;left: 30px;padding-left: 20px;background-color: transparent;width: 300px;border: none;color: #fff;border-bottom: 1px solid #eee;transition: all 0.5s;z-index: 10}.search-option .inputs input:focus{box-shadow: none;outline: none;z-index: 10}.search-option:hover{border-radius: 0px;width: 100%;left: 0px}.search-option:hover .inputs{opacity: 1}.search-option:hover .first-search{left: 27px;top: 25px;font-size: 15px}.search-option:hover .inputs input{top: 20px}.search-option .share{position: absolute;right: 20px;top: 22px}.buttons .btn{height: 50px;width: 150px;border-radius: 0px !important}
+#marker-grey{
+    background-color: grey;
+}
+#marker-light-blue{
+    background-color: lightblue;
+}
+#marker-dark-green{
+    background-color: darkgreen;
+}
+#marker-dark-yellow{
+    background-color: darkgoldenrod;
+}
+#marker-dark-magenta{
+    background-color:darkmagenta;
+}
+#marker-light-green{
+    background-color:rgb(146, 185, 146);
+}
+
+.price-and-button {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    margin-right: 10px; /* Fügen Sie Platz zwischen Preis und Button hinzu, falls gewünscht */
+}
+
+.button-container {
+    display: inline-block; /* Stellen Sie sicher, dass der Button inline angezeigt wird */
+}
+
+
+
+
+
+
+.search-option{position: 
+    absolute;background-color: #000;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 49% 51% 50% 50% / 68% 69% 31% 32%;
+    left: 30%;
+    bottom: -250px;
+    transition: all 0.5s;
+    cursor: pointer}
+    
+.search-option .first-search{
+        position: absolute;
+        top: 20px;
+        left: 90px;
+        font-size: 20px;
+        opacity: 1000}
+        
+.search-option .inputs{
+    opacity: 0;transition: all 0.5s ease;transition-delay: 0.5s;position: relative}
+    .search-option .inputs input{
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        padding-left: 20px;
+        background-color: transparent;
+        width: 300px;
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+        transition: all 0.5s;z-index: 10}
+.search-option .inputs input:focus{
+    box-shadow: 
+    none;outline: 
+    none;z-index: 10}
+    
+.search-option:hover{border-radius: 0px;
+    width: 100%;
+    left: 0px}
+    
+.search-option:hover .inputs{
+    opacity: 1}
+    
+.search-option:hover .first-search{
+    left: 27px;
+    top: 25px;
+    font-size: 15px}
+    
+.search-option:hover .inputs input{
+    top: 20px}
+    
+.search-option .share{
+    position: absolute;
+    right: 20px;
+    top: 22px}
+    
+.buttons .btn{
+    height: 50px;
+    width: 150px;
+    border-radius: 0px !important}
+
+
+/* Container für die Buttons */
+.sizes ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* Stile für die Buttons */
+.sizes ul li {
+    margin-right: 10px; /* Abstand zwischen den Buttons */
+}
+
+/* Allgemeine Stile für die Buttons */
+.sizes ul li Button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Stile für den Hover-Effekt */
+.sizes ul li Button:hover {
+    background-color: #297dbf;
+}
+
+/* Stile für den aktiven Button (ausgewählte Größe) */
+.sizes ul li.active Button {
+    background-color: #e74c3c;
+}
+
+/* Stile für den Text innerhalb der Buttons */
+.sizes ul li Button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detail{
+    background: rgb(240, 240, 240);
+    margin-bottom: 100px;
+}
+.detail-col{
+    display: inline-block;
+}
+.shipping{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding:10px
+    
+}
+
+.OrderButton {
+    background-color: #0073e6; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    font-size: 16px; /* Schriftgröße */
+    border: none; /* Kein Rahmen */
+    padding: 10px 20px; /* Innenabstand */
+    border-radius: 5px; /* Abrundung der Ecken */
+    cursor: pointer; /* Zeiger als Cursor */
+    transition: background-color 0.3s; /* Sanfter Farbübergang beim Hover */
+}
+
+.OrderButton:hover {
+    background-color: #0055a4; /* Farbwechsel beim Hover */
+}
+
+/* Optional: Textschatten für den Button */
+.OrderButton {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cart i{
+    color: #000;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Testimonials */
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.testimonials a{
+    text-decoration: none;
+}
+
+
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px ;
+}
+
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #000000;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #000000;
+}
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Die Sternicons oben ausrichten */
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+
+}

@@ -16,7 +16,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Clothes.com</a>
+          <a class="navbar-brand" href="#">DressUp.com</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,11 +51,16 @@
             </li>
             </ul>
             <div class="search">
-              <input type="text" class="search-input" placeholder="What are you looking for?" name="">
-              <a href="#" class="search-icon">
-                  <i class="fa fa-search"></i>
+                <input type="text" class="search-input" placeholder="What are you looking for?" name="">
+                  <a href="#" class="search-icon">
+                      <i class="fa fa-search"></i>
+                  </a>
+            </div>
+            <div class="cart p-3">
+              <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
               </a>
-          </div>
+            </div>
           
             
           </div>
@@ -70,6 +75,9 @@
             </div>
         </div>
 </header>
+
+
+
 
 
 <main class="">
@@ -171,143 +179,432 @@
 
 <section>
   <h1 class="p-3">Clothes for Man</h1>
+ 
+  
 </section>
 
   <section class="product-list p-5">
-            <div class="p-5 row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="p-5 row row-cols-1 row-cols-sm-2 row-cols-md-6">
                   <div class="col">
                       <div class="product">
-                          <a href="product_detail.html"> <!-- Ersetze "ZIEL-DEINER-NEUEN-SEITE.html" durch die tatsächliche URL der Zielseite -->
+                        
+                          <a href="product_detail.html">
+                            
+                            <div style="position: relative; display: inline-block;">
                               <img draggable="false" alt="Fleecepullover" src="https://img01.ztat.net/article/spp-media-p1/b342c9e46ca5495dab26ba4ec64e94e6/c3841ff6758c4ba992b2b82322c85aa9.jpg?imwidth=300&amp;filter=packshot"
-                                  sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                              sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                              <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                                <i class="fa-regular fa-heart"></i>
+                              </button>
+                          </div>
                           </a>
+                          
                           <h4>Pullover</h4>
                           <h5>Napapirji</h5>
                           <p>Fleece Windbreaker</p>
-                          <span class="price">$299.99</span>
-                          <button class="add-to-cart">ADD TO CART</button>
+                          <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-grey"></li>	
+                                <li id="marker-blue"></li>	
+                                <li id="marker-black"></li>	
+
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$299.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                       </div>
                   </div>
-            
+                  
                   <div class="col">
                       <div class="product">
-                          <img draggable="false"  alt="Jeans" src="https://img01.ztat.net/article/spp-media-p1/7daef958a3624c3e981dc0aafa288c12/dcb0f64500944ec09c30f773b814e94b.jpg?imwidth=300" 
-                          sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <a href="product_detail.html">
+                            
+                          <div style="position: relative; display: inline-block;">
+                            <img draggable="false"  alt="Jeans" src="https://img01.ztat.net/article/spp-media-p1/7daef958a3624c3e981dc0aafa288c12/dcb0f64500944ec09c30f773b814e94b.jpg?imwidth=300" 
+                            sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                            <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </a>
+          
                           <h4>Jeans</h4>
                           <h5>Wrangler</h5>
                           <p>Jeans-Tapered Fit</p>
-                          <span class="price">$79.99</span>
-                          <button class="add-to-cart">ADD TO CART</button>
+                          <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-grey"></li>	
+                                <li id="marker-light-blue"></li>	
+                                <li id="marker-black"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$79.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                       </div>
                   </div>
                   <div class="col">
                       <div class="product">
-                          <img draggable="false"  alt="Puffer" src="https://img01.ztat.net/article/spp-media-p1/7c9ba579a8d44553b07a1c5b098ecf5f/30d9a7787af0407d8f0af9c5e5428a30.jpg?imwidth=300"  
-                          sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <a href="product_detail.html">
+                            
+                          <div style="position: relative; display: inline-block;">
+                            <img draggable="false"  alt="Puffer" src="https://img01.ztat.net/article/spp-media-p1/7c9ba579a8d44553b07a1c5b098ecf5f/30d9a7787af0407d8f0af9c5e5428a30.jpg?imwidth=300"  
+                            sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                            <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        </a>
+                          
                           <h4>Puffer Jacket</h4>
                           <h5>North Face</h5>
                           <p>Downen Jacket</p>
-                          <span class="price">$379.99</span>
-                          <button class="add-to-cart">ADD TO CART</button>
+
+                          <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-black"></li>	
+                                <li id="marker-dark-green"></li>	
+                                <li id="marker-dark-yellow"></li>	
+
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$379.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                       </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false" alt="Pullover" src="https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=500 605w" 
-                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <a href="product_detail.html">
+                            
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" alt="Pullover" src="https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/e56194ac1ea64200948d8a155eee8b02/6e593774af10473390b3959f76e704ff.jpg?imwidth=500 605w" 
+                          sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                          <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                            <i class="fa-regular fa-heart"></i>
+                          </button>
+                      </div>
+                      </a>
+
                         <h4>Pullover</h4>
                         <h5>Vans</h5>
                         <p>Fleece Pullover</p>
-                        <span class="price">$80.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <span class="fw-bold">Available Colorways</span>	
+                        <div class="colors">	
+                          <ul id="marker">	
+                              <li id="marker-black"></li>	
+                              <li id="marker-blue"></li>	
+                              <li id="marker-dark-magenta"></li>	
+
+                          </ul>
+                        </div>	
+                          <div class="price-and-button">
+                            <span class="price">$80.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="product">
+                      <a href="product_detail.html">
+                            
+                      <div style="position: relative; display: inline-block;">
                         <img draggable="false" alt="Half-Zip" src="https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/963f7bdede6f4a0e9a8864cc27d99e21/4e97cb323dcf4ec4ae18faf06aa17990.jpg?imwidth=500 605w" 
                         sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                        <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                      </a>  
+          
                           <h4>Half Zip</h4>
                           <h5>Pegador</h5>
                           <p>Sewater Half Zipped</p>
-                          <span class="price">$69.99</span>
-                          <button class="add-to-cart">ADD TO CART</button>
+                          <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-dark-green"></li>	
+                                <li id="marker-grey"></li>	
+                                <li id="marker-black"></li>	
+
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$69.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="product">
+
+                      <a href="product_detail.html">
+                      <div style="position: relative; display: inline-block;">
                         <img draggable="false" alt="Pullover Jacket" src="https://img01.ztat.net/article/spp-media-p1/fefce103569048deb01b94aceb75ab51/c47f71121bc843a9b86437b5a6827faf.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/fefce103569048deb01b94aceb75ab51/c47f71121bc843a9b86437b5a6827faf.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/fefce103569048deb01b94aceb75ab51/c47f71121bc843a9b86437b5a6827faf.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/fefce103569048deb01b94aceb75ab51/c47f71121bc843a9b86437b5a6827faf.jpg?imwidth=500 605w" 
                         sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+                       
                         <h4>Pullover Jacket</h4>
                         <h5>Jack & Jones</h5>
                         <p>Zip Unisex Pullover</p>
-                        <span class="price">$59.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <span class="fw-bold">Available Colorways</span>	
+                        <div class="colors">	
+                          <ul id="marker">	
+                              <li id="marker-black"></li>	
+                              <li id="marker-blue"></li>	
+                              <li id="marker-dark-green"></li>	
+
+                          </ul>	
+                        </div>	
+                        <div class="price-and-button">
+                          <span class="price">$59.99</span>
+                          <span class="button-container">
+                              <button class="iconButton">
+                                  <i class="fa-solid fa-cart-shopping"></i>
+                              </button>
+                          </span>
+                        </div>
                     </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false" alt ="" src="https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=500 605w" 
-                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                        <img draggable="false" alt ="" src="https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/ec283b131d654fa58e64e09ab52552f5/4f997134fe6444f8a4be0e436963b2b5.jpg?imwidth=500 605w" 
+                        sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+                      
                         <h4>Knitted Sweater</h4>
                         <h5>Bershka</h5>
                         <p>Pullover Knittet</p>
-                        <span class="price">$39.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-white"></li>	
+                                <li id="marker-grey"></li>	
+                                <li id="marker-black"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$39.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=500 605w" 
-                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/0367c5b1fb3b41a3a26fed422014d0cb/a6a80206c23c4905a60c7d4ab79903f6.jpg?imwidth=500 605w" 
+                          sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+                      
                         <h4>T-Shirt</h4>
                         <h5>Under Amour</h5>
                         <p>Active Wear T-Shirt</p>
-                        <span class="price">$29.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-black"></li>	
+                                <li id="marker-blue"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$29.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false"src="https://img01.ztat.net/article/spp-media-p1/8907e5aedd2a412c910151bee6e9a752/043c3b2bf7024ea09efd102bf9baaaeb.jpg?imwidth=300" srcset="https://img01.ztat.net/article/spp-media-p1/8907e5aedd2a412c910151bee6e9a752/043c3b2bf7024ea09efd102bf9baaaeb.jpg?imwidth=300 303w, https://img01.ztat.net/article/spp-media-p1/8907e5aedd2a412c910151bee6e9a752/043c3b2bf7024ea09efd102bf9baaaeb.jpg?imwidth=400 429w, https://img01.ztat.net/article/spp-media-p1/8907e5aedd2a412c910151bee6e9a752/043c3b2bf7024ea09efd102bf9baaaeb.jpg?imwidth=500 605w" 
-                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
-                       
-                        <h4>Modern Overshirt</h4>
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" alt="VINTAGE - Jeans Straight Leg - light blue" src="https://img01.ztat.net/article/spp-media-p1/f7c01cef25a3468ebb6c1c041707fb3e/4df73c5c68f84c4783a8e60826dd0294.jpg?imwidth=300" 
+                          sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+                    
+                        <h4>Jeans</h4>
                         <h5>Tommy Jeans</h5>
-                        <p>Winterjacke</p>
-                        <span class="price">$159.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <p>Straight Fit</p>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-black"></li>	
+                                <li id="marker-grey"></li>	
+                                <li id="marker-light-blue"></li>	
+
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$159.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
+
+
+
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false" alt="Sweatpants" src="https://img01.ztat.net/article/spp-media-p1/7059f48fd1a048e0acff668bface8814/f69f77b1d2fc4319813532de7341f49a.jpg?imwidth=300" sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
-                        <h4>Sweatpants</h4>
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" alt="Sweatpants" src="https://img01.ztat.net/article/spp-media-p1/7059f48fd1a048e0acff668bface8814/f69f77b1d2fc4319813532de7341f49a.jpg?imwidth=300" sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+                  
+                      <h4>Sweatpants</h4>
                         <h5>Nike</h5>
-                        <p>Grey Sweatpants</p>
-                        <span class="price">$39.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <p>Sweatpants</p>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-black"></li>	
+                                <li id="marker-grey"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$39.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/e3c6406a599143bc970d207b8f07fdd2/c067c35abdd94c05962de1b859e20bda.jpg?imwidth=300" 
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/e3c6406a599143bc970d207b8f07fdd2/c067c35abdd94c05962de1b859e20bda.jpg?imwidth=300" 
                       sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+
                         <h4>Trainingsjacket</h4>
                         <h5>Bershka</h5>
                         <p>Retro Trainingsjacket Bershka</p>
-                        <span class="price">$29.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-light-green"></li>
+                                <li id="marker-grey"></li>	
+                                <li id="marker-black"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$29.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
+
                   <div class="col">
                     <div class="product">
-                      <img draggable="false"  alt="Socks" src="https://img01.ztat.net/article/spp-media-p1/8e30bbe86aa84abcaaccb24503cecdb2/01752ed9e77b408ca1a193dfbc6aa882.jpg?imwidth=300&amp;filter=packshot" 
-                      sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
-                        <h4>Modern Overshirt</h4>
-                        <h5>Tommy Jeans</h5>
-                        <p>Winterjacke</p>
-                        <span class="price">$159.99</span>
-                        <button class="add-to-cart">ADD TO CART</button>
+
+                      <a href="product_detail.html">
+                        <div style="position: relative; display: inline-block;">
+                          <img draggable="false" src="https://img01.ztat.net/article/spp-media-p1/e70b86cd477445d6bdcc423fb8596797/bcade2e4834e4520ac72e47c9ce3f333.jpg?imwidth=300" 
+                           sizes="(min-width: 1280px) 288px, (min-width: 1024px) calc(25vw - 28px), (min-width: 480px) calc(33vw - 24px), calc(50vw - 30px)">
+                      <button class="iconButton p-1" style="position: absolute; top: 0; right: 0;">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                      </div>
+                      </a>  
+
+
+                     
+                        <h4>Winterjacket</h4>
+                        <h5>Pull and Bear</h5>
+                        <p>Lightweight Winterjacket</p>
+                        <span class="fw-bold">Available Colorways</span>	
+                          <div class="colors">	
+                            <ul id="marker">	
+                                <li id="marker-light-green"></li>
+                                <li id="marker-grey"></li>	
+                                <li id="marker-black"></li>	
+                            </ul>	
+                          </div>	
+                          <div class="price-and-button">
+                            <span class="price">$159.99</span>
+                            <span class="button-container">
+                                <button class="iconButton">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </span>
+                          </div>
                     </div>
                   </div>
               
