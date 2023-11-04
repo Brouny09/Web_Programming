@@ -15,7 +15,6 @@
 <body>
 
 
-
 <!-- Discount Banner  -->
 <div id="discount-banner" style="background-color: #6351ce; color: white; text-align: center; padding: 10px;">
         <p style="display: inline-block; margin: 0; color: rgb(255, 255, 255);">Save now -25% on select styles from top brands with code: WINTER25</p>
@@ -26,7 +25,6 @@
             document.getElementById("discount-banner").style.display = "none";
         });
     </script> 
-    
     
 
 <!-- Hero Section -->
@@ -89,7 +87,7 @@
         </p>
       </div>
     </div>
-    
+
    <!-- Testimonil 1 -->
     <div class="row text-center">
       <div class="col-md-4 mb-5 mb-md-0">
@@ -215,66 +213,71 @@
 </section>
 
 
-
-
 <!-- Contact Us Section -->
 <section class="contact-section mb-4" style="background-color: #f4f4f4; padding-bottom: 20px;">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="md-form mb-0">
-                <input type="text" id="name" name="name" class="form-control">
-                <label for="name">Your name</label>
+    <form id="contact-form">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="inputSubject">Your Name</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="inputAddress2">Your email</label>
+                </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="md-form mb-0">
-                <input type="text" id="email" name="email" class="form-control">
-                <label for="email">Your email</label>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="md-form">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="inputSubject">Subject</label>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="md-form">
-                <input type="text" id="subject" name="subject" class="form-control">
-                <label for="subject">Subject</label>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <label for="inputAddress2">Your message</label>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="md-form">
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Your message</label>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <button type="btn btn-danger fw-semibold py-2" class="btn btn-primary">Send</button>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <a class="btn btn-primary" onclick="createJSON();">Send</a>
-        </div>
-    </div>
-</section>
-
-<script>
-    function createJSON() {
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
-
-        // Convert form data to JSON
-        const jsonData = JSON.stringify(formData);
-
-        // Display the JSON object in the console
-        console.log(jsonData);
-    }
-</script>
-
-
+    </form>
+  </section>
+  
+  
+  <script>
+    const forminput = document.querySelector('form');
+  
+    forminput.addEventListener('submit', event => {
+    event.preventDefault();
+    const formData = new FormData(forminput);
+    console.log(formData);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+  
+    fetch('https://webhook.site/b135788b-0322-4d41-8e60-be6b3959fdc5',{
+        method: 'POST',
+        body: JSON.stringify(data),
+        mode: 'no-cors'
+    })
+    .then( (response) => response )
+    .then( (data) => {
+    console.log(data);
+    alert('data submitted');
+    });
+    });
+  </script>
 
 <!-- Footer Section -->
 <footer class="text-center text-lg-start text-white" style="background-color: #1c2331; position: relative; bottom: 0; width: 100%;">
