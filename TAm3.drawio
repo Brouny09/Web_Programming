@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15" version="26.0.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15" version="26.0.4">
   <diagram name="Seite-1" id="qVPOXcnoh64hScKHRhEc">
-    <mxGraphModel dx="982" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -182,7 +182,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="wk0jViUZOCFL1q821VQ8-26" value="" style="swimlane;startSize=0;fillColor=#dae8fc;strokeColor=#6C8EBF;rotation=90;strokeWidth=3;" parent="1" vertex="1">
-          <mxGeometry x="635" y="-5" width="90" height="320" as="geometry" />
+          <mxGeometry x="635" y="-5" width="90" height="320" as="geometry">
+            <mxRectangle x="795" y="115" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wk0jViUZOCFL1q821VQ8-30" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;cognitive instrumental processes&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(126, 166, 224);&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;(Kognitive Faktoren)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=270;" parent="1" vertex="1">
           <mxGeometry x="140" y="253.75" width="210" height="92.5" as="geometry" />
@@ -200,7 +202,9 @@
           <mxGeometry x="490" y="590" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wk0jViUZOCFL1q821VQ8-56" value="" style="swimlane;startSize=0;fillColor=#dae8fc;strokeColor=#6C8EBF;strokeWidth=3;" parent="1" vertex="1">
-          <mxGeometry x="280" y="490" width="180" height="150" as="geometry" />
+          <mxGeometry x="280" y="490" width="180" height="150" as="geometry">
+            <mxRectangle x="280" y="490" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wk0jViUZOCFL1q821VQ8-49" value="&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Perceived Enjoyment&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(126, 166, 224);&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;(Wahrgenommenes Vergnügen)&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="wk0jViUZOCFL1q821VQ8-56" vertex="1">
           <mxGeometry x="30" y="10" width="110" height="60" as="geometry" />
