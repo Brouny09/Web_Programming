@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15" version="26.0.3">
   <diagram name="Seite-1" id="PPa_s9wPXj0M3EQ-aR-X">
-    <mxGraphModel dx="982" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1178" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -144,6 +144,9 @@
             <mxPoint x="530" y="310" as="sourcePoint" />
             <mxPoint x="480" y="270" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Y04keu7PvzAEaYyiW48K-65" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;social influence processes&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; color: rgb(126, 166, 224);&quot;&gt;(Soziale Faktoren)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="30" width="210" height="92.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
